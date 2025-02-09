@@ -1,0 +1,177 @@
+{
+    "fighters": [
+      {
+        "id": 1,
+        "name": "Jon Jones",
+        "bio": "Ongeslagen kampioen en een van de meest dominante vechters in de UFC geschiedenis.",
+        "age": 36,
+        "active": true,
+        "birthdate": "1987-07-19",
+        "image_url": "",
+        "weight_class": "Light Heavyweight",
+        "styles": ["Wrestling", "Muay Thai"],
+        "gym": {
+          "id": 1,
+          "name": "Jackson Wink MMA Academy",
+          "location": "Albuquerque, USA",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 2,
+        "name": "Khabib Nurmagomedov",
+        "bio": "Onverslagen kampioen met een sterke worstelachtergrond.",
+        "age": 35,
+        "active": false,
+        "birthdate": "1988-09-20",
+        "image_url": "",
+        "weight_class": "Lightweight",
+        "styles": ["Sambo", "Wrestling"],
+        "gym": {
+          "id": 2,
+          "name": "American Kickboxing Academy",
+          "location": "San Jose, USA",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 3,
+        "name": "Israel Adesanya",
+        "bio": "Kickboks specialist en voormalig Middleweight kampioen.",
+        "age": 34,
+        "active": true,
+        "birthdate": "1989-07-22",
+        "image_url": "",
+        "weight_class": "Middleweight",
+        "styles": ["Kickboxing", "Muay Thai"],
+        "gym": {
+          "id": 3,
+          "name": "City Kickboxing",
+          "location": "Auckland, New Zealand",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 4,
+        "name": "Conor McGregor",
+        "bio": "Iers icoon en voormalig kampioen in twee gewichtsklassen.",
+        "age": 36,
+        "active": true,
+        "birthdate": "1988-07-14",
+        "image_url": "",
+        "weight_class": "Lightweight",
+        "styles": ["Boxing", "Karate"],
+        "gym": {
+          "id": 4,
+          "name": "SBG Ireland",
+          "location": "Dublin, Ireland",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 5,
+        "name": "Francis Ngannou",
+        "bio": "Een van de hardst slaande vechters in de geschiedenis van MMA.",
+        "age": 37,
+        "active": true,
+        "birthdate": "1986-09-05",
+        "image_url": "",
+        "weight_class": "Heavyweight",
+        "styles": ["Boxing", "Kickboxing"],
+        "gym": {
+          "id": 5,
+          "name": "Xtreme Couture",
+          "location": "Las Vegas, USA",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 6,
+        "name": "Alexander Volkanovski",
+        "bio": "Voormalig rugbyspeler die uitgroeide tot Featherweight kampioen.",
+        "age": 35,
+        "active": true,
+        "birthdate": "1988-09-29",
+        "image_url": "",
+        "weight_class": "Featherweight",
+        "styles": ["Wrestling", "Striking"],
+        "gym": {
+          "id": 3,
+          "name": "City Kickboxing",
+          "location": "Auckland, New Zealand",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 7,
+        "name": "Henry Cejudo",
+        "bio": "Olympisch kampioen worstelen en voormalig UFC-kampioen.",
+        "age": 36,
+        "active": true,
+        "birthdate": "1987-02-09",
+        "image_url": "",
+        "weight_class": "Bantamweight",
+        "styles": ["Wrestling", "Striking"],
+        "gym": {
+          "id": 2,
+          "name": "American Kickboxing Academy",
+          "location": "San Jose, USA",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 8,
+        "name": "Max Holloway",
+        "bio": "Voormalig Featherweight kampioen met indrukwekkende striking skills.",
+        "age": 32,
+        "active": true,
+        "birthdate": "1992-12-04",
+        "image_url": "",
+        "weight_class": "Featherweight",
+        "styles": ["Boxing", "Kickboxing"],
+        "gym": {
+          "id": 4,
+          "name": "SBG Ireland",
+          "location": "Dublin, Ireland",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 9,
+        "name": "Dustin Poirier",
+        "bio": "Technisch sterke striker met een indrukwekkend record in de Lightweight divisie.",
+        "age": 35,
+        "active": true,
+        "birthdate": "1989-01-19",
+        "image_url": "",
+        "weight_class": "Lightweight",
+        "styles": ["Boxing", "Jiu-Jitsu"],
+        "gym": {
+          "id": 6,
+          "name": "American Top Team",
+          "location": "Coconut Creek, USA",
+          "image_url": ""
+        }
+      },
+      {
+        "id": 10,
+      "name": "Stipe Miocic",
+      "bio": "Voormalig Heavyweight kampioen en brandweerman.",
+      "age": 41,
+      "active": true,
+      "birthdate": "1982-08-19",
+      "image_url": "",
+      "weight_class": "Heavyweight",
+      "styles": ["Wrestling", "Boxing"],
+      "gym": {
+        "id": 7,
+        "name": "Strong Style MMA",
+        "location": "Cleveland, USA",
+        "image_url": ""
+      }
+
+      }
+
+    ]
+  }
+  
