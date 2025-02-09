@@ -7,14 +7,14 @@
         "age": 36,
         "active": true,
         "birthdate": "1987-07-19",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/jon%20jones.png",
         "weight_class": "Light Heavyweight",
         "styles": ["Wrestling", "Muay Thai"],
         "gym": {
           "id": 1,
           "name": "Jackson Wink MMA Academy",
           "location": "Albuquerque, USA",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/jacksonwing.jpg"
         }
       },
       {
@@ -24,14 +24,14 @@
         "age": 35,
         "active": false,
         "birthdate": "1988-09-20",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/khabib.jpg",
         "weight_class": "Lightweight",
         "styles": ["Sambo", "Wrestling"],
         "gym": {
           "id": 2,
           "name": "American Kickboxing Academy",
           "location": "San Jose, USA",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/AKA.jpg"
         }
       },
       {
@@ -41,14 +41,14 @@
         "age": 34,
         "active": true,
         "birthdate": "1989-07-22",
-        "image_url": "",
+        "image_url":"https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/ADESANYA_ISRAEL_L_02-01.png",
         "weight_class": "Middleweight",
         "styles": ["Kickboxing", "Muay Thai"],
         "gym": {
           "id": 3,
           "name": "City Kickboxing",
           "location": "Auckland, New Zealand",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/city%20kickboxing.jpg"
         }
       },
       {
@@ -58,14 +58,14 @@
         "age": 36,
         "active": true,
         "birthdate": "1988-07-14",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/connor.jpg",
         "weight_class": "Lightweight",
         "styles": ["Boxing", "Karate"],
         "gym": {
           "id": 4,
           "name": "SBG Ireland",
           "location": "Dublin, Ireland",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/sbg%20ireland.jpg"
         }
       },
       {
@@ -75,14 +75,14 @@
         "age": 37,
         "active": true,
         "birthdate": "1986-09-05",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/francis.jpg",
         "weight_class": "Heavyweight",
         "styles": ["Boxing", "Kickboxing"],
         "gym": {
           "id": 5,
           "name": "Xtreme Couture",
           "location": "Las Vegas, USA",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/XtremeCouture.jpg"
         }
       },
       {
@@ -92,14 +92,14 @@
         "age": 35,
         "active": true,
         "birthdate": "1988-09-29",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/alexander.png",
         "weight_class": "Featherweight",
         "styles": ["Wrestling", "Striking"],
         "gym": {
           "id": 3,
           "name": "City Kickboxing",
           "location": "Auckland, New Zealand",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/city%20kickboxing.jpg"
         }
       },
       {
@@ -109,14 +109,14 @@
         "age": 36,
         "active": true,
         "birthdate": "1987-02-09",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/henry%20cejudo.jpg",
         "weight_class": "Bantamweight",
         "styles": ["Wrestling", "Striking"],
         "gym": {
           "id": 2,
           "name": "American Kickboxing Academy",
           "location": "San Jose, USA",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/AKA.jpg"
         }
       },
       {
@@ -126,14 +126,14 @@
         "age": 32,
         "active": true,
         "birthdate": "1992-12-04",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/max%20holloway.png",
         "weight_class": "Featherweight",
         "styles": ["Boxing", "Kickboxing"],
         "gym": {
           "id": 4,
           "name": "SBG Ireland",
           "location": "Dublin, Ireland",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/sbg%20ireland.jpg"
         }
       },
       {
@@ -143,14 +143,14 @@
         "age": 35,
         "active": true,
         "birthdate": "1989-01-19",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/dustin%20piorier.png",
         "weight_class": "Lightweight",
         "styles": ["Boxing", "Jiu-Jitsu"],
         "gym": {
           "id": 6,
           "name": "American Top Team",
           "location": "Coconut Creek, USA",
-          "image_url": ""
+          "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/american%20top%20team.jpg"
         }
       },
       {
@@ -160,14 +160,14 @@
       "age": 41,
       "active": true,
       "birthdate": "1982-08-19",
-      "image_url": "",
+      "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/stipe.webp",
       "weight_class": "Heavyweight",
       "styles": ["Wrestling", "Boxing"],
       "gym": {
         "id": 7,
         "name": "Strong Style MMA",
         "location": "Cleveland, USA",
-        "image_url": ""
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/strong%20style.jpg"
       }
 
       }

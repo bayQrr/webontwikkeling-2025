@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Jackson Wink MMA Academy",
         "location": "Albuquerque, USA",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/jacksonwing.jpg",
         "head_coach": "Greg Jackson",
         "notable_fighters": ["Jon Jones"]
       },
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "American Kickboxing Academy",
         "location": "San Jose, USA",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/AKA.jpg",
         "head_coach": "Javier Mendez",
         "notable_fighters": ["Khabib Nurmagomedov", "Henry Cejudo"]
       },
@@ -20,7 +20,7 @@
         "id": 3,
         "name": "City Kickboxing",
         "location": "Auckland, New Zealand",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/city%20kickboxing.jpg",
         "head_coach": "Eugene Bareman",
         "notable_fighters": ["Israel Adesanya", "Alexander Volkanovski"]
       },
@@ -28,7 +28,7 @@
         "id": 4,
         "name": "SBG Ireland",
         "location": "Dublin, Ireland",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/sbg%20ireland.jpg",
         "head_coach": "John Kavanagh",
         "notable_fighters": ["Conor McGregor", "Max Holloway"]
       },
@@ -36,7 +36,7 @@
         "id": 5,
         "name": "Xtreme Couture",
         "location": "Las Vegas, USA",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/XtremeCouture.jpg",
         "head_coach": "Eric Nicksick",
         "notable_fighters": ["Francis Ngannou"]
       },
@@ -44,7 +44,7 @@
         "id": 6,
         "name": "Tristar Gym",
         "location": "Montreal, Canada",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/tristar%20gym.jpg",
         "head_coach": "Firas Zahabi",
         "notable_fighters": []
       },
@@ -52,7 +52,7 @@
         "id": 7,
         "name": "Elevation Fight Team",
         "location": "Denver, USA",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/Elevation%20gym.jpg",
         "head_coach": "Eliot Marshall",
         "notable_fighters": []
       },
@@ -60,21 +60,21 @@
         "id": 8,
         "name": "Nova União",
         "location": "Rio de Janeiro, Brazil",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/nova%20uniao.jpg",
         "head_coach": "André Pederneiras",
         "notable_fighters": []
       },{
         "id": 9,
         "name": "AKA Thailand",
         "location": "Phuket, Thailand",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/aka%20thailand.jpg",
         "head_coach": "Mike Swick",
         "notable_fighters": []
       },{
         "id": 10,
         "name": "Alliance MMA",
         "location": "San Diego, USA",
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bayQrr/webontwikkeling-2025/refs/heads/main/assets/alliance%20mma.jpg",
         "head_coach": "Eric Del Fierro",
         "notable_fighters": []
       }
