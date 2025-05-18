@@ -1,0 +1,52 @@
+<%- include('header.ejs') %>
+    <main>
+        <form action="/" method="get" class="search">
+            <img src="/assets/imgs/magnifying-glass-solid.svg" alt="glass" width="33">
+            <input type="text" id="search" name="q" value="<%= q %>" class="searchBar" placeholder="Search for characters">
+            <button type="submit"></button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <% for (let field of sortFields) { %>
+                        <th>
+                            <a href="?sortField=<%= field.value %>&sortDirection=<%= field.value === sortField ? sortDirection === 'asc' ? 'desc' : 'asc' : 'asc' %>&q=<%= q %>">
+                                <%= field.text %>
+                                <% if (field.value === sortField) { %>
+                                    <%- sortDirection === 'asc' ? '▲' : '▼' %>
+                                <% } %>
+                            </a>
+                        </th>
+                    <% } %>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let character of characters) { %>
+                    <tr>
+                        <td>
+                            <div class="nameCharacters">
+                                <h1><%= character.name %></h1>
+                                <img src="<%= character.profilePicture %>" alt=""> 
+                            </div>
+                        </td>
+                        <td><%= character.birthdate %></td>
+                        <td class="abilities">
+                            <p><%= character.abilities[0] %></p>
+                            <p><%= character.abilities[1] %></p>
+                            <p><%= character.abilities[2] %></p>
+                            <p><%= character.abilities[3] %></p>
+                        </td>
+                        <td>
+                            <div class="role">
+                                <p><%= character.role %></p>
+                                <img src="<%= character.roleSymbol %>" alt="role" class="role"> </td>
+                            </div>
+                        <td><%= character.available %></td>
+                        <td><a href="/characters/<%= character.id %>">view</a></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </main>
+<%- include('footer.ejs') %>
+

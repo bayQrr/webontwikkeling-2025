@@ -1,0 +1,32 @@
+<%- include('header.ejs') %>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>founded</th>
+                    <th>motto</th>
+                    <th>captain</th>
+                    <th>country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let character of characters) { %>
+                    <tr>
+                        <td>
+                            <a href="/teams/<%= character.id %>" class="nameTeams">
+                                <h1><%= character.teams.name %></h1>
+                                <img src="<%= character.teams.logo %>" alt=""> 
+                            </a>
+                        </td>
+                        <td><%= character.teams.founded %></td>
+                        <td><%= character.teams.motto %></td>
+                        <td><%= character.teams.captain %></td>
+                        <td><%= character.teams.country %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </main>
+<%- include('footer.ejs') %>
+

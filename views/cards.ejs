@@ -1,0 +1,30 @@
+<%- include("header.ejs") %>
+<main>
+    <section class="characters">
+        <% for (let character of characters) { %>
+        <article class="card">
+            <img class="head" src="<%= character.avatar %>" alt="Avatar">
+            <div class="container">
+                <h1><%= character.name %></h1> 
+                <p><%= character.description %></p> 
+                <p>Age: <%= character.age %></p>
+                <p>Available: <%= character.available%></p>
+                <p>Birth Date: <%= character.birthdate %></p>
+                <p>Team: <%= character.teams.name %></p>
+                <p>Role: <%= character.role %> <img src="<%= character.roleSymbol %>" alt="roler" width="15""></p>
+                <p>Abilities:</p>
+                <div class="abilities">
+                    <p><%= character.abilities[0] %></p>
+                    <p><%= character.abilities[1] %></p>
+                    <p><%= character.abilities[2] %></p>
+                    <p><%= character.abilities[3] %></p>
+                </div>
+                <% if (role === "ADMIN") {%>
+                    <a href="/characters/<%= character.id %>/edit" class="edit-button">Edit</a>
+                <%}%>
+            </div>
+        </article>
+        <% } %>
+    </section>
+</main>
+<%- include("footer.ejs") %>

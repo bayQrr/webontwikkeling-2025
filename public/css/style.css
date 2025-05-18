@@ -1,0 +1,408 @@
+/*--- algemeen ---*/
+html, body {
+    box-sizing: border-box;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+h1, h2, h3 {
+    color: var(--colorBlack);
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+h1 {
+    font-weight:bolder;
+    color: var(--colorRed);
+}
+h2 {
+    letter-spacing: 3px;
+}
+p {
+    display: inline;
+    line-height: 1.3rem;
+    text-align: left;
+}
+a, footer p {
+    color: var(--colorBlack);
+}
+/*--- color ---*/
+:root {
+    --colorBlue: #02439D;
+    --colorLightBlue: #90B1FE;
+    --colorBlack: #1d1d1b;
+    --colorWhite: #ffffff;
+    --colorPurple: #41006A;
+    --colorLightPurple: #FFA9F6;
+    --colorRed: #F94554;
+}
+body {
+    margin: 20px;
+    padding: 0;
+    color: var(--colorBlack);
+}
+/*header*/
+header {
+    margin-bottom: 2rem;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+header nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    padding-top: 1.8rem;
+    gap: 1rem;
+}
+header nav a {
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--colorRed);
+    padding-bottom: 1.25rem;
+    position: relative;
+    opacity: 0.75;
+    height: 15px;
+}
+header nav a:hover, .logout:hover {
+    opacity: 1;
+}
+header nav > ul > li > a::before , .logout:before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: var(--colorRed);
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+}
+
+header nav > ul > li > a:hover::before, .logout:hover::before {
+    height: 5px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--- overzichtpagina van characters ---*/
+table {
+    margin-top: 1rem;
+    width: 100%;
+}
+table thead tr {
+    background-color: var(--colorRed);
+    text-align: left;
+    font-weight: bold;
+}
+
+table thead tr th a {
+    color: var(--colorWhite);
+}
+table thead tr th:nth-child(3) a, 
+table thead tr th:nth-child(6) a {
+    pointer-events: none;
+    cursor: default;
+}
+table th,
+table td {
+    padding: 12px 15px;
+}
+table tbody tr {
+    border-bottom: 1px solid var(--colorRed);
+}
+.nameTeams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+}
+.nameCharacters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.nameTeams img {
+    width: 100px;
+}
+.abilities p {
+    background-color: #b2defc;
+    border: 1px solid #0076c5;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    padding-left: 0.3rem;
+    margin-top: 0.5rem;
+    box-shadow: #74c2f6 0px 3px 8px;
+    font-size: 10px;
+    max-width: 9rem;
+}
+.abilities p:nth-child(4) {
+    background-color: #f1aef8;
+    border: 1px solid #dd00b8;
+    box-shadow: #ee80f8 0px 3px 8px;
+}
+.abilities p:hover {
+    box-shadow: 0 8px 16px 0 #74c2f6;
+}
+.abilities p:nth-child(4):hover {
+    box-shadow: 0 8px 16px 0 #ee80f8;
+}
+.abilities {
+    display: flex;
+    flex-direction: column;
+}
+.role{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    gap: 2rem;
+    align-items: center;
+}
+/*--- cards ---*/
+.characters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;  
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    box-shadow: 0 4px 8px 0 var(--colorRed);
+    transition: 0.3s;
+    width: 25%;
+    padding-bottom: 2rem;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--colorRed);
+}
+.head {
+    width: 100%;
+}
+.container {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.container .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container .abilities p {
+    width: 50%;
+}
+.searchBar {
+    width: 250px;
+    padding-left: 0.5rem;
+    margin: 3rem 1.1rem 0 0;
+    border-radius: 0.5rem;
+    border: var(--colorRed) solid 1px;
+    height: 2.3rem;
+}
+.searchBar:focus {
+    box-shadow: 
+    0px 1px 2px 0px var(--colorRed),
+    1px 2px 4px 0px var(--colorRed),
+    2px 4px 8px 0px var(--colorRed),
+    2px 4px 16px 0px var(--colorRed);
+}
+.search {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*--- login ---*/ 
+.login-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin: 3rem 0;
+    padding: 50px 0;;
+    background-color: #18181C;
+    border-radius: 1rem;
+
+}
+
+.login-form input {
+    width: 80%;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-form input[type="submit"] {
+    background-color: var(--colorRed);
+    font-family: FortniteFont;
+    font-size: larger;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.login-form input[type="submit"]:hover {
+    border: 1.5px solid white;
+}
+
+.login-button {
+    display: flex;
+    background-color: var(--colorRed);
+    color: black;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    border: 1.5px solid white;
+}
+
+.label-username,
+.label-password {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-form a {
+    color: white;
+    margin: 1rem;
+    text-decoration: underline;
+}
+
+/*--- registerpage ---*/
+
+.registreer-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.registreer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin: 3rem 0;
+    padding: 50px 0;
+    background-color: #18181C;
+    border-radius: 1rem;
+}
+
+.registreer-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.registreer-form input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    font-family: FortniteFont;
+    font-size: larger;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.registreer-form input[type="submit"]:hover {
+    border: 1.5px solid white;
+}
+
+.error-message {
+    font-family: FortniteMedium;
+    color: red;
+    text-decoration: underline;
+    padding: 0;
+    text-align: center;
+}
+
+.label-username,
+.label-password {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.registreer-button {
+    margin: 1rem 0;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: yellow;
+    font-family: FortniteFont;
+    font-size: larger;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    width: 70%;
+
+}
+
+.registreer-button:hover {
+    border: 1.5px solid white;
+}
+
+.tochAanmelden {
+    color: white;
+    margin: 1rem;
+    text-decoration: underline;
+}
+/*--- logout ---*/
+.logout{
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--colorRed);
+    padding-bottom: 1.25rem;
+    position: relative;
+    opacity: 0.75;
+    cursor: pointer;
+}
+/*--- mediaquerries ---*/
+@media screen and (max-width: 1120px) {
+    .card {
+        width: 40%;
+    }
+    .registreer-button .login-section{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .card {
+        width: 100%;
+    }
+}

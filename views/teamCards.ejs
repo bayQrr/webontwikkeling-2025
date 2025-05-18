@@ -1,0 +1,18 @@
+<%-include("header.ejs") %>
+<main>
+    <section class="characters">
+        <% for (let character of characters) { %>
+        <article class="card">
+            <img class="head" src="<%= character.teams.logo %>" alt="logo">
+            <div class="container">
+                <h1><%= character.teams.name %></h1> 
+                <p>Motto: <%= character.teams.motto %></p> 
+                <p>Founded: <%= character.teams.founded %></p> 
+                <p>Captain: <%= character.teams.captain %></p>
+                <p>Country: <%= character.teams.country %></p>
+            </div>
+        </article>
+        <% } %>
+    </section>
+</main>
+<%- include("footer.ejs") %>

@@ -1,0 +1,50 @@
+<!-- HTML-formulier -->
+<%- include("header.ejs") %>
+<main>
+    <section class="characters">
+        <article class="card">
+            <img class="head" src="<%= character.avatar %>" alt="Avatar">
+                <form action="/characters/<%= character.id %>/edit" method="post" class="container">
+                    <h1>Edit Character</h1>
+                
+                    <label for="name">Name:
+                        <input type="text" id="name" name="name" value="<%= character.name %>">
+                    </label>
+
+                    <p><%= character.description %></p> 
+                    
+                    <label for="age">Age:
+                        <input type="number" id="age" name="age" value="<%= character.age %>">
+                    </label>
+                    <label for="available">Available:
+                        <select id="available" name="available">
+                            <option value="true" <% if (character.available) { %>selected<% } %>>Yes</option>
+                            <option value="false" <% if (!character.available) { %>selected<% } %>>No</option>
+                        </select>
+                    </label>
+
+                    <label for="birthdate">Birth Date:
+                        <input type="date" id="birthdate" name="birthdate" value="<%= character.birthdate %>">
+                    </label>
+                    <p>Team: <%= character.teams.name %></p>
+
+                    <label for="role">Role:
+                        <select id="role" name="role">
+                            <option value="Duelist" <% if (character.role === 'Duelist') { %>selected<% } %>>Duelist</option>
+                            <option value="Initiator" <% if (character.role === 'Initiator') { %>selected<% } %>>Initiator</option>
+                            <option value="Controller" <% if (character.role === 'Controller') { %>selected<% } %>>Controller</option>
+                            <option value="Sentinel" <% if (character.role === 'Sentinel') { %>selected<% } %>>Sentinel</option>
+                        </select>
+                    </label>
+                    <div class="abilities">
+                        <p><%= character.abilities[0] %></p>
+                        <p><%= character.abilities[1] %></p>
+                        <p><%= character.abilities[2] %></p>
+                        <p><%= character.abilities[3] %></p>
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+        </article>
+    </section>
+</main>
+<%- include("footer.ejs") %>

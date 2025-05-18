@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/font.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="registreer-section">
+        <form class="registreer-form" action="/registreer" method="POST">
+            <h1 class="registreer-h1">Registreer</h1>
+            <label class="label-username" for="username">Gebruikersnaam:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label class="label-password" for="password">Wachtwoord:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label class="label-password" for="password">Bevestig wachtwoord:</label>
+            <input type="password" id="password" name="confirmPassword" required>
+            
+            <% if (typeof message !== 'undefined') { %>
+                <p class="error-message"><%= message %></p>
+            <% } %>
+            <button class="registreer-button" type="submit">Registreer</button>
+            <a class="tochAanmelden" href="/login">Toch aanmelden?</a>
+        </form>
+    </section>
+<%- include('footer.ejs') %>
