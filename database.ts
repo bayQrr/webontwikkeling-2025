@@ -6,7 +6,7 @@ import bcrypt from "bcrypt";
 
 dotenv.config();
 
-const saltRounds : number = 10;
+const saltRounds: number = 10;
 export const uri = process.env.URI || "mongodb+srv://badryounes:badr123@valorant.ibcvdvo.mongodb.net/";
 const client = new MongoClient(uri);
 
@@ -23,7 +23,10 @@ async function exit() {
     process.exit(0);
 }
 
-//characters
+// ───────────────────────────────────────────────
+// CHARACTERS
+// ───────────────────────────────────────────────
+
 export async function getCharacters() {
     return await collectionCharacters.find({}).toArray();
 }
@@ -31,13 +34,14 @@ export async function getCharacters() {
 async function loadCharactersFromApi() {
     const Characters: Characters[] = await getCharacters();
 
-    if (Characters.length == 0) {
-        console.log("Database is leeg, characters uit API halen nu...")
+    if (Characters.length === 0) {
+        console.log("Database is leeg, characters uit API halen nu...");
         const response = await fetch("https://raw.githubusercontent.com/bayQrr/api/refs/heads/main/characters.json");
         const Characters: Characters[] = await response.json();
         await collectionCharacters.insertMany(Characters);
     }
 }
+
 export async function searchAndSortCharacters(sortField: string, sortDirection: number, searchQuery: string) {
     let query: any = {};
 
@@ -50,7 +54,6 @@ export async function searchAndSortCharacters(sortField: string, sortDirection: 
         sortParams[sortField] = sortDirection;
 
         let result = await collectionCharacters.find(query).sort(sortParams).toArray();
-
         return result;
     } catch (error) {
         console.error('Error searching and sorting characters:', error);
@@ -84,48 +87,60 @@ export const sortDirections = [
     { value: 'desc', text: 'Descending' }
 ];
 
-//login
+// ───────────────────────────────────────────────
+// LOGIN / REGISTER
+// ───────────────────────────────────────────────
+
 async function createDefaultUsers() {
     try {
-        const users : User[] = await userCollection.find({}).toArray();
-    if (users.length == 0) {
-        await registerUser("admin", "admin123", "ADMIN");
-        await registerUser("user", "user123", "USER");
-        console.log("Default users created successfully.");
-    }
-
+        const users: User[] = await userCollection.find({}).toArray();
+        if (users.length === 0) {
+            await registerUser("admin", "admin123", "ADMIN");
+            await registerUser("user", "user123", "USER");
+            console.log("Default users created successfully.");
+        }
     } catch (error) {
         console.error("Error creating default users:", error);
     }
 }
 
-export async function registerUser(username :string | undefined, password : string | undefined, role : "ADMIN" | "USER") {
-    if (username === undefined || password === undefined) {
-        throw new Error("ADMIN_EMAIL and ADMIN_PASSWORD must be set in environment");
+export async function registerUser(username: string | undefined, password: string | undefined, role: "ADMIN" | "USER") {
+    if (!username || !password) {
+        return false; // invalid input
     }
-    
+
+    const existingUser = await userCollection.findOne({ username });
+    if (existingUser) {
+        return false; // gebruiker bestaat al
+    }
+
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
     await userCollection.insertOne({
         username: username,
-        password: await bcrypt.hash(password, saltRounds),
+        password: hashedPassword,
         role: role
     });
+
+    return true; // registratie gelukt
 }
 
 export async function loginUser(username: string, password: string) {
     if (username === "" || password === "") {
-        throw new Error("Email and password required");
+        return null;
     }
-    let user : User | null = await userCollection.findOne<User>({username: username});
-    if (user) {
-        if (await bcrypt.compare(password, user.password!)) {
-            return user;
-        } else {
-            throw new Error("Password incorrect");
-        }
-    } else {
-        throw new Error("User not found");
-    }
+
+    const user: User | null = await userCollection.findOne<User>({ username });
+    if (!user) return null;
+
+    const isMatch = await bcrypt.compare(password, user.password!);
+    if (!isMatch) return null;
+
+    return user;
 }
+
+// ───────────────────────────────────────────────
+// CONNECTIE
+// ───────────────────────────────────────────────
 
 export async function connect() {
     try {
